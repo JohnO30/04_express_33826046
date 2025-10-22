@@ -6,23 +6,23 @@ This project demonstrates the basic structure of an Express application, includi
 
 ## Features Used
 
--Serves static files from the public directory
+- Serves static files from the public directory
 
--Custom route handling via /routes/main.js
+- Custom route handling via /routes/main.js
 
--Dedicated /file endpoint that serves a.html
+- Dedicated /file endpoint that serves a.html
 
--Organised structure for scalability and clarity
+- Organised structure for scalability and clarity
 
 ## Technologies Used
 
--Node.js — JavaScript runtime environment
+- Node.js — JavaScript runtime environment
 
--Express.js — Backend web framework for Node.js
+- Express.js — Backend web framework for Node.js
 
--HTML — For static content in the public directory
+- HTML — For static content in the public directory
 
--JavaScript  — Core scripting language used throughout the project
+- JavaScript  — Core scripting language used throughout the project
 
 npm — Package manager for handling dependencies
 
@@ -32,7 +32,7 @@ npm — Package manager for handling dependencies
 / index.js               # Main server entry point
 / routes/                # Folder containing route definitions
 / main.js                # Main route handler
-/ public/                # Folder for static assets (HTML, CSS, JS, images)
+/ public/                # Folder for static assets 
 /   a.html               # Example static file served at /file
 / package.json           # Project metadata and dependencies
 / package-lock.json
