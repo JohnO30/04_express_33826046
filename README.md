@@ -27,17 +27,18 @@ This project demonstrates the basic structure of an Express application, includi
 npm — Package manager for handling dependencies
 
 ## Project Structure
-
-04_express_33826046/
+```bash
+/04_express_33826046
 / index.js               # Main server entry point
 / routes/                # Folder containing route definitions
-/  └── main.js            # Main route handler
+/ main.js                # Main route handler
 / public/                # Folder for static assets (HTML, CSS, JS, images)
-/   └── a.html             # Example static file served at /file
+/   a.html               # Example static file served at /file
 / package.json           # Project metadata and dependencies
 / package-lock.json
 / .gitignore
 / node_modules/
+ ```
 
 ## Installation & Setup
 
