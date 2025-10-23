@@ -45,11 +45,8 @@ router.get('/chain', handlerOne, handlerTwo);
 
 // New /file route
 router.get('/file', (req, res) => {
-  // Send a.html as the response
-  res.sendFile(path.join(__dirname, 'public', 'a.html'));
+  res.sendFile(path.join(__dirname, '../a.html'));
 });
-
-
 
 // Export the router so index.js can use it
 module.exports = router;
