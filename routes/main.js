@@ -42,10 +42,13 @@ function handlerTwo(req, res) {
 // Define the /chain route with two chained handlers
 router.get('/chain', handlerOne, handlerTwo);
 
-// Route to serve a static HTML file
-app.get('/file', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/a.html'));
+
+// New /file route
+router.get('/file', (req, res) => {
+  // Send a.html as the response
+  res.sendFile(path.join(__dirname, 'public', 'a.html'));
 });
+
 
 
 // Export the router so index.js can use it

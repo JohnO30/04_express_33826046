@@ -12,7 +12,12 @@ const mainRoutes = require("./routes/main");
 app.use('/', mainRoutes);
 
 // Serve static files 
-app.use(express.static(path.join(__dirname, 'public')));
+const path = require('path');
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/a.html'));
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
