@@ -14,11 +14,6 @@ app.use('/', mainRoutes);
 // Serve static files 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route /file -> a.html
-app.get('/file', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'a.html'));
-});
-
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
